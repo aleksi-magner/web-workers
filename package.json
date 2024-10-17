@@ -1,0 +1,17 @@
+{
+  "name": "web-workers",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "yarn build && serve dist"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
+  }
+}
