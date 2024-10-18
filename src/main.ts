@@ -49,6 +49,14 @@ const second = <HTMLInputElement>document.querySelector('#number2');
 
 const result = <HTMLParagraphElement>document.querySelector('.result');
 
+/**
+ * Web Workers позволяет запускать операцию сценария в фоновом потоке,
+ * отдельном от основного потока выполнения веб-приложения.
+ * Преимущество этого заключается в том, что трудоёмкая обработка может
+ * выполняться в отдельном потоке, что позволяет основному потоку
+ * (обычно пользовательскому интерфейсу) работать без блокировки/замедления.
+ */
+
 if ('Worker' in window) {
   const worker = new Worker('worker.js');
 

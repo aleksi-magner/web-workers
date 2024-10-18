@@ -1,3 +1,4 @@
+// Fetch/HXR запросы всё равно видны во вкладке Сеть
 self.addEventListener('message', event => {
   console.log('[Worker] Сообщение получено из основного скрипта');
 
